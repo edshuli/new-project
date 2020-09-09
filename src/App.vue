@@ -1,24 +1,20 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <HomePage></HomePage>
-    <BeersPage></BeersPage>
-    <Footer></Footer>
+    <Navbar></Navbar>
+    <router-view></router-view>
+    
   </div>
 </template>
 
 <script>
-import Header from './components/Header';
-import HomePage from './components/HomePage';
-import BeersPage from './components/BeersPage';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+
+
+
 export default {
   name: 'App',
   components: {
-    Header,
-    HomePage,
-    BeersPage,
-    Footer
+    Navbar
   }
 }
 </script>

@@ -8,19 +8,23 @@
             <hr class="my-2">
             <p class="lead">We don't just show you beers. We create an amazing journey through the world of beer.</p>
             <hr class="my-3">
-            <a class="showMoreButton btn btn-primary btn-sm" href="#" role="button">View our beers</a>
+            
+               <router-link to="/beers" class="showMoreButton btn btn-primary btn-sm"  role="button">View our beers</router-link>
+
           </div>
        </div>
       </div>
+      <Footer></Footer>
       </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
 export default {
+  name: "home",
   components: {
-
+    Footer
   }
-   
 }
 </script>
 
@@ -33,7 +37,8 @@ export default {
   font-style: normal;
   color: black;
   line-height: 1.65;
-  margin-top: 30px;
+  
+  
 }
 
 .opaque-overlay {

@@ -1,14 +1,14 @@
 <template>
     <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="mainTitle" href="#">BeerWorld</a>
+        <nav class="navbar navbar-expand-lg navbar-light text-uppercase bg-light">
+            <a class="mainTitle" href="/">BeerWorld</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -21,13 +21,14 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                         <router-link to="/beers" class="nav-link">Home</router-link>
                     </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
+                    <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search fa-lg" aria-hidden="true"></i></button>
                 </form>
+                </ul>
+                
             </div>
         </nav> 
     </div> 
@@ -38,27 +39,27 @@ export default {
     components:{
         
     }
+  
+    }
 
-}
 </script>
 
 <style scoped>
 
 .header{ 
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    background: #f4f5f6;
+    transition: all 0.5s ease-out;
     }
 
 .mainTitle {
     color: #5b1201;
-    font-size: 25px;
-    font-family: 'Lobster', cursive;
-    font-weight:500;
-    letter-spacing: normal;
-    line-height:1;
-    margin-left:32%;
+    display: inline-block;
+    padding-top: 0.325rem;
+    padding-bottom: 0.325rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
 }
 
 .bg-light {
@@ -81,6 +82,11 @@ export default {
 
 .navbar-collapse{
     margin-top:10px;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 form{
@@ -103,21 +109,17 @@ form{
 
 /*Media Queries*/
 @media (max-width:281px) {
-  .mainTitle {
-    margin-left:10%;
-   }  
+ 
 }
 
 @media (min-width:539px) and (max-width: 719px) {
-  .btn-outline-success {
-    margin-left: -10%;
-   }
+  
 }
 
 
 
 @media (min-width:767px) and (max-width: 1022px) {
-  .mainTitle {
+ /* .mainTitle {
     margin-left:42%;
     
    } 
@@ -127,14 +129,19 @@ form{
    } 
    .btn-outline-success {
     margin-left: -10%;
-   }
+   }*/
 }
 
 @media (min-width:1023px) {
-  .mainTitle {
+        form{
+            margin-left:5%;
+        }
+
+  /*.mainTitle {
     margin-left:0%;
     margin-right:20px;
    } 
+   
    .navbar-nav{
      margin-left: 20%!important;
    }
@@ -144,14 +151,14 @@ form{
    .btn-outline-success {
     margin-left: -25%;
    }
-
+*/
 }
 
 @media (min-width: 1365px){
-    .mainTitle{
+    /*.mainTitle{
         margin-left: 10px;
         margin-right: 13%;
-}
+}*/
 
 }
 

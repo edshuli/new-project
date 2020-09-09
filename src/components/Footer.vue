@@ -10,10 +10,12 @@
 
 <script>
 export default {
-    
-}
+    name:"footer"
+};
 </script>
 
 <style scoped>
-
+  .socialContainer{
+      background-color:grey;
+  }
 </style>

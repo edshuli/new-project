@@ -24,7 +24,7 @@ export default new Vuex.Store({
         async fetchBeers({ commit }) {
             try {
                 const cors = "https://cors-anywhere.herokuapp.com/";
-                const url = `${cors}https://api.brewerydb.com/v2/beers/?key=659d5c6b8f3d2447f090119e48202fdb`;
+                const url = `${cors}https://api.brewerydb.com/v2/categories/?key=659d5c6b8f3d2447f090119e48202fdb`;
                 const response = await axios.get(url)
                 const data = (await response.data).data;
                 commit("SET_BEERS", data);
@@ -34,10 +34,14 @@ export default new Vuex.Store({
                 console.log(err);
             }
         },
-        /*async fetchCategories({ commit }){
+        /*async fetchCategories({ commit }) {
+            const cors = "https://cors-anywhere.herokuapp.com/";
             const url = `${cors}https://api.brewerydb.com/v2/categories/?key=659d5c6b8f3d2447f090119e48202fdb`;
             const response = await axios.get(url);
-            const data = await response.json
+            const data = (await response.data).data;
+            commit('SET_CATEGORIES', data);
+            console.log(data)
+            return data
         }*/
     }
 

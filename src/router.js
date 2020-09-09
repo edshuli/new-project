@@ -1,16 +1,23 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-//CCOMPONENTS
+//Views
+import Home from './views/Home.vue';
 import Beers from './views/Beers.vue';
 
 Vue.use(VueRouter);
 
 const routes = [{
-    path: "/beers",
-    name: "beers",
-    component: Beers
-}];
+        path: "/",
+        name: "home",
+        component: Home,
+    },
+    {
+        path: "/beers",
+        name: "beers",
+        component: Beers
+    }
+];
 
 const router = new VueRouter({
     mode: "history",

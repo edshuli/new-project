@@ -4,8 +4,7 @@
           <div  class="col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">{{ item.id }}</h5>
-                <p class="card-text">{{ item.name}}</p>
+                <h5 class="card-title">{{ item.name }}</h5>
               </div>
             </div>
           </div>
@@ -32,6 +31,7 @@
 import { mapState } from "vuex";
 
 export default {
+  name: "beerspage",
   computed: {
    ...mapState(["beers"])
   },
