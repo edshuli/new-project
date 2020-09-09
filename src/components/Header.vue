@@ -30,13 +30,6 @@
                 </form>
             </div>
         </nav> 
-         <div class="socialContainer">
-            <div class="col-sm-2 icons d-none d-sm-block">
-                <a href="https://linkedin.com/in/edna-shuli-49142888" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://github.com/edshuli" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/dido_edna/?hl=el" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div> 
-         </div>
     </div> 
 </template>
 
@@ -97,12 +90,12 @@ form{
 .form-control{
     width: 80%;
     padding: 2px 12px;
-    border: 1px solid #959d9d;
+    border: 1px solid #5b1201;
 ;
 }
 
 .btn-outline-success {
-    color:#959d9d;
+    color:#5b1201;
     border:0px;
     margin-left: -20%;
 }
@@ -115,18 +108,54 @@ form{
    }  
 }
 
+@media (min-width:539px) and (max-width: 719px) {
+  .btn-outline-success {
+    margin-left: -10%;
+   }
+}
+
+
+
 @media (min-width:767px) and (max-width: 1022px) {
   .mainTitle {
     margin-left:42%;
     
-   }  
+   } 
+   .form-control {
+    width: 30%;
+    margin-left: 23%;
+   } 
+   .btn-outline-success {
+    margin-left: -10%;
+   }
 }
 
 @media (min-width:1023px) {
   .mainTitle {
     margin-left:0%;
     margin-right:20px;
-   }  
+   } 
+   .navbar-nav{
+     margin-left: 20%!important;
+   }
+   form {
+    margin-left: 25%;
+   } 
+   .btn-outline-success {
+    margin-left: -25%;
+   }
+
 }
+
+@media (min-width: 1365px){
+    .mainTitle{
+        margin-left: 10px;
+        margin-right: 13%;
+}
+
+}
+
+
+
 
 </style>

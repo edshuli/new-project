@@ -4,7 +4,7 @@
       <div class="container homePageContainer h-100">
         <div class="row h-100">
           <div class="col my-auto">
-            <h2 class="display-5 homeTtitle">Let's go beer haunting</h2>
+            <h2 class="display-5 homeTtitle">Let's go beer hunting</h2>
             <hr class="my-2">
             <p class="lead">We don't just show you beers. We create an amazing journey through the world of beer.</p>
             <hr class="my-3">
