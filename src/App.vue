@@ -20,10 +20,12 @@ export default {
 </script>
 
 <style>
+@import "./assets/css/style.css";
 #app {
   font-family: 'Playfair Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
 </style>

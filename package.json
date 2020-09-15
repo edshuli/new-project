@@ -20,9 +20,10 @@
         "request": "^2.88.2",
         "serialize-javascript": "^4.0.0",
         "vue": "^2.6.11",
-        "vuex": "^3.5.1",
         "vue-router": "^3.3.4",
-        "vue-sidebar-menu": "^4.6.1"
+        "vue-sidebar-menu": "^4.6.1",
+        "vuesax": "^3.11.18",
+        "vuex": "^3.5.1"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.0",

@@ -63,7 +63,7 @@ export default {
 }
 
 .bg-light {
-    background-color: #ffffff!important;
+    background-color: #540e1536!important;
 }
 
 .navbar-toggler {
